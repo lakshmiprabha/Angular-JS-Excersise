@@ -1,3 +1,43 @@
 <div>
-	<p> This is my Profile page..... cool....</p>
+	 <form name="ProfilePageForm" id="ProfilePageForm">
+					
+					
+					<p/><p/><p/><p/><p/><p/><p/><p/><p/>
+
+					<section>
+						<table>
+							<tr>
+								<td>
+								<input type="text" placeholder="Name" id="userName" name="userName"
+									ng-model="userName"/></td></tr>
+								<tr>
+								<td>
+								<input  type="number" name="age" placeholder="Age" id="age"
+									ng-model="age"/></td></tr>
+								<tr>
+								<td>
+								<input type="tel" name="phone" id="phone" placeholder="Phone"
+								 ng-model="phone""/></td></tr>
+								<tr>
+								<td>
+								<input type="email" name="email" placeholder="Email"
+									 ng-model="email"/></td></tr>
+								<tr>
+								<td>
+								<textarea name="address" placeholder="Address" 
+										rows="5",cols="25" ng-model="address"></textarea>
+								</td></tr>
+
+							
+					</table>
+<p/><p/><p/><p/><p/><p/><p/><p/>	
+<tr> <td>
+								<input type='file' id='file' accept='image/*'/></td></tr>	<button ng-click="openFile()">Display</button>
+<tr> <td>
+		<img id ="output" ng-src="{{data}}" width="152" height="229"></img></td></tr>
+<tr> <td>
+		<button ng-click="saveUserProfile()">Save</button><td></tr>
+						
+					</section>		
+			</form>
 </div>
