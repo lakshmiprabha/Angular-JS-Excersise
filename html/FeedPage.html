@@ -1,13 +1,15 @@
 <div>
-	<table id = "keyInFeed" name = "keyInFeed">
+<link rel="stylesheet" type="text/css" href="../styles/FeedPageStyle.css"></link>
+	<table id = "keyInFeed" name = "keyInFeed" align="center">
 		<tr>
-			<td><input type = "text" id = "enterFeed" name = "enterFeed" size = "100" value= "Text Feed or URL Feed" ng-model="newFeed"></td>
+			<td><input type = "text" id = "enterFeed" name = "enterFeed" size = "100"
+				placeholder= "Text Feed or URL Feed" ng-model="newFeed" ng-required="true" ng-maxlength=""></td>
 			<td><input type = "button" id = "postButton" name = "postButton" value = "Post" ng-click = "insertNewFeed()"></td>
 		</tr>
 	</table>
 <div ng-repeat="feed in feedArray">
-	<div> {{ feed.name}}</div>
-	<div> {{ feed.date}}</div>
+	<div class="feedDisplay"> {{ feed.name}}     {{feed.date}}</div>
 	<button ng-click="deleteFeed(feed.name)">&times;</button>
+	
 </div>
 </div>
